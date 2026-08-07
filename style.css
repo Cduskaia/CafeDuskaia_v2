@@ -26,6 +26,7 @@ header {
   width: 100px;
   height: auto;
 }
+
 /* order beans button */
 
 .orderbeans-icon {
@@ -33,6 +34,17 @@ header {
 }
 
 .orderbeans-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* social media icons */
+
+.social-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
     transform: scale(1.1);
     opacity: 0.9;
 }
@@ -77,6 +89,7 @@ header {
 .dropbtn:hover {
   color: #ffd9b3;
 }
+
 
 /* Dropdown */
 
