@@ -26,6 +26,16 @@ header {
   width: 100px;
   height: auto;
 }
+/* order beans button */
+
+.orderbeans-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.orderbeans-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
 
 /* Center text */
 
