@@ -268,8 +268,8 @@ section h2,h3 {
 
   /* Smaller logos on mobile */
   .logo {
-    width: 70px;
-    margin-bottom: 10px;
+    width: 90px;
+    margin-bottom: 5px;
   }
 
   /* Navigation links stack nicely */
