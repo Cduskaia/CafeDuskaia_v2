@@ -187,6 +187,10 @@ section p {
   text-align: center;
 }
 
+.our-story p {
+  text-align: left;
+}
+
 /* Tables */
 
 table {
