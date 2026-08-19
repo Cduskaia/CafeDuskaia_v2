@@ -387,7 +387,7 @@ section h2,h3 {
    }
 
   .social-icon {
-    width: 34px;
-    height: 34px;
+    /*width: 34px; */
+    height: 40px;
   }
 }
