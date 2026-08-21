@@ -334,28 +334,31 @@ section h2,h3 {
 
   /* Header layout for phones */
   header {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    padding: 20px;
+    padding: 10px 15px;
   }
 
   /* Smaller logos on mobile */
   .logo {
-    width: 90px;
-    margin-bottom: 5px;
+    width: 160px;
+    margin-bottom: 0;
   }
 
   /* Navigation links stack nicely */
  .navbar {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
 }
 
 .nav-left,
 .nav-center,
 .nav-right {
     text-align: center;
-    width: 100%;
+    width: auto;
+    flex: 1;
 }
 
 .dropdown-content {
