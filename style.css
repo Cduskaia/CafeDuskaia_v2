@@ -9,52 +9,84 @@ body {
 
 /* Header */
 
-header {
+/* =========================================
+   HEADER
+   ========================================= */
+
+.site-header {
   background-color: #5c3d2e;
   color: white;
+  padding: 18px 40px 20px;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 8px;
+}
+
+/* -----------------------------------------
+   LINE 1 - Café Duskaia Nicaragua
+   ----------------------------------------- */
+
+.header-title {
+  text-align: center;
+}
+
+.header-title h1 {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* -----------------------------------------
+   LINE 2 - Logo left / Order Beans right
+   ----------------------------------------- */
+
+.header-middle {
+  width: 75%;
+  max-width: 850px;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 20px 40px;
 }
-
-/* Logo images */
 
 .logo {
   width: 160px;
   height: auto;
+  display: block;
 }
 
-/* order beans button */
-
 .orderbeans-icon {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  height: auto;
+
+  transition: transform 0.3s ease,
+              opacity 0.3s ease;
 }
 
 .orderbeans-icon:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
-/* social media icons */
+/* -----------------------------------------
+   LINE 3 - Tagline
+   ----------------------------------------- */
 
-.social-icon {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-}
-
-/* Center text */
-
-.header-text {
+.header-tagline {
   text-align: center;
-  flex-grow: 1;
 }
+
+.header-tagline p {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
 
 
 /* Navigation */
@@ -332,18 +364,35 @@ section h2,h3 {
     flex-direction: column;
   }
 
-  /* Header layout for phones */
-  header {
-    flex-direction: row;
-    text-align: center;
-    padding: 10px 15px;
+  /* =========================================
+   MOBILE HEADER
+   ========================================= */
+
+.site-header {
+  padding: 14px 15px 16px;
+  row-gap: 6px;
+}
+
+.header-title h1 {
+  font-size: 24px;
+}
+
+  .header-middle {
+    width: 100%;
   }
 
-  /* Smaller logos on mobile */
-  .logo {
-    width: 120px;
-    margin-bottom: 0;
-  }
+.logo {
+  width: 110px;
+}
+
+.orderbeans-icon {
+  max-width: 145px;
+}
+
+.header-tagline p {
+  font-size: 15px;
+}
+  
 
   /* Navigation links stack nicely */
  .navbar {
