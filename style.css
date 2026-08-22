@@ -359,62 +359,62 @@ section h2,h3 {
 
 @media (max-width: 768px) {
 
-  /* Stack menu columns vertically */
-  .menu-columns {
-    flex-direction: column;
-  }
+     /* Stack menu columns vertically */
+   .menu-columns {
+      flex-direction: column;
+   }
 
   /* =========================================
    MOBILE HEADER
    ========================================= */
 
-.site-header {
-  padding: 14px 15px 16px;
-  row-gap: 6px;
-}
+   .site-header {
+     padding: 14px 15px 16px;
+     row-gap: 6px;
+   }
 
-.header-title h1 {
-  font-size: 24px;
-}
+   .header-title h1 {
+     font-size: 24px;
+   }
 
   .header-middle {
     width: 100%;
   }
 
-.logo {
-  width: 110px;
-}
+  .logo {
+     width: 110px;
+  }
 
-.orderbeans-icon {
-  max-width: 145px;
-}
+  .orderbeans-icon {
+     max-width: 145px;
+  }
 
-.header-tagline p {
-  font-size: 15px;
-}
+  .header-tagline p {
+     font-size: 15px;
+  }
   
 
   /* Navigation links stack nicely */
- .navbar {
+  .navbar {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 0;
-}
+  }
 
-.nav-left,
-.nav-center,
-.nav-right {
+  .nav-left,
+  .nav-center,
+  .nav-right {
     text-align: center;
     width: auto;
     flex: 1;
-}
+  }
 
-.dropdown-content {
+  .dropdown-content {
     position: static;
     transform: none;
     width: 100%;
-}
+  }
 
   /* Slightly smaller menu text */
   .menu-list li {
@@ -432,14 +432,37 @@ section h2,h3 {
       width: 100%;
    }
 
-  /* Social media icons on mobile */
-  .social-links {
-     gap: 8px;
-     flex-wrap: nowrap;
+   /* Social media icons on mobile */
+   .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
    }
 
-  .social-icon {
-    /*width: 34px; */
-    height: 40px;
-  }
+   /* First four icons */
+   .social-links a:not(:last-child) {
+     flex: 0 0 auto;
+   }
+
+   /* Google Review gets its own row */
+   .social-links a:last-child {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+   }
+
+   /* Icon sizes */
+   .social-icon {
+      height: 40px;
+      width: auto;
+   }
+
+   /* Make Google Review button larger */
+   .social-links a:last-child .social-icon {
+      height: 100px;
+   }
+   
 }
