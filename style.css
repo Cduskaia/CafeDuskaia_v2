@@ -165,6 +165,32 @@ main {
   padding: 20px;
 }
 
+/* Coffee Origin Tour Sign-Up Button */
+
+.tour-button-container {
+    text-align: center;
+    margin: 20px auto 25px auto;
+}
+
+.tour-signup-button {
+    display: inline-block;
+    background-color: #6b3e26;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.tour-signup-button:hover {
+    background-color: #a66a42;
+    color: white;
+}
+
+/* End of sign-up button */
+
 /* Hero Image */
 
 .hero img {
