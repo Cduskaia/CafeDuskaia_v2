@@ -509,7 +509,8 @@ section h2,h3 {
   }
 
   /* holiday */
-   .holiday-heading {
+   
+  .holiday-heading {
     font-size: 30px;
     letter-spacing: 1px;
     padding: 30px 5px;
