@@ -209,38 +209,72 @@ main {
    CHRISTMAS HOLIDAY SPECIALS HEADING
    ========================================= */
 
+/* =========================================
+   CHRISTMAS HOLIDAY SPECIALS
+   ========================================= */
+
 .holiday-heading {
+  position: relative;
   text-align: center;
 
-  /* Large holiday lettering */
-  font-size: 52px;
+  /* Large lettering */
+  font-size: 54px;
   font-weight: 900;
   letter-spacing: 3px;
 
   /* Christmas colors */
-  color: #ffffff;
+  color: #ffdf70;
+
   background: linear-gradient(
     135deg,
-    #8b0000,
-    #c62828,
-    #8b0000
+    #064d29,
+    #08743b,
+    #064d29
   );
 
-  /* Gold decorative border */
-  border: 5px double #d4af37;
-  border-radius: 15px;
+  /* Gold border */
+  border: 5px double #e6bd45;
+  border-radius: 18px;
 
-  /* Spacing */
-  padding: 30px 15px;
+  padding: 35px 15px;
   margin: 45px auto 35px;
   max-width: 850px;
 
-  /* Festive appearance */
-  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+  /* Holiday glow */
+  text-shadow:
+    2px 2px 3px #641010,
+    0 0 12px rgba(255, 215, 0, 0.6);
 
   box-shadow:
-    0 5px 15px rgba(0, 0, 0, 0.25),
-    inset 0 0 15px rgba(255, 215, 0, 0.2);
+    0 6px 18px rgba(0, 0, 0, 0.3),
+    inset 0 0 25px rgba(255, 215, 0, 0.15);
+
+  /* Decorative snowflakes */
+  overflow: hidden;
+}
+
+/* Decorative stars and snowflakes */
+
+.holiday-heading::before {
+  content: "❄  ✦  ❄";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.holiday-heading::after {
+  content: "❄  ✦  ❄";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 25px;
+  letter-spacing: 5px;
 }
 
 /* Mobile Holiday Heading */
@@ -474,11 +508,22 @@ section h2,h3 {
      font-size: 15px;
   }
 
-  .holiday-heading {
-  font-size: 28px;
-  margin: 25px auto;
-  padding: 12px;
+  /* holiday */
+   .holiday-heading {
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 30px 5px;
+    margin: 30px auto;
+    border-width: 4px;
   }
+
+  .holiday-heading::before,
+  .holiday-heading::after {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  */
 
   /* Navigation links stack nicely */
   .navbar {
