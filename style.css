@@ -203,6 +203,26 @@ main {
 
 /* Sections */
 
+/* Holiday Specials Heading */
+
+.holiday-heading {
+  text-align: center;
+  color: #8b1e1e;           /* Christmas red */
+  font-size: 36px;
+  font-weight: bold;
+  margin: 35px auto 30px;
+  padding: 15px;
+  letter-spacing: 2px;
+
+  /* Festive gold accent */
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+
+  border-bottom: 3px solid #c9a227;
+  max-width: 500px;
+}
+
+/* end of Holiday Specials Heading */
+
 section {
   margin-bottom: 40px;
 }
@@ -418,7 +438,12 @@ section h2,h3 {
   .header-tagline p {
      font-size: 15px;
   }
-  
+
+  .holiday-heading {
+  font-size: 28px;
+  margin: 25px auto;
+  padding: 12px;
+  }
 
   /* Navigation links stack nicely */
   .navbar {
