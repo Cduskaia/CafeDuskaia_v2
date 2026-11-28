@@ -209,87 +209,76 @@ main {
    CHRISTMAS HOLIDAY SPECIALS HEADING
    ========================================= */
 
-/* =========================================
-   CHRISTMAS HOLIDAY SPECIALS
-   ========================================= */
-
 .holiday-heading {
-  position: relative;
-  text-align: center;
+position: relative;
+text-align: center;
 
-  /* Large lettering */
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: 3px;
+/* Large lettering */
+font-size: 54px;
+font-weight: 900;
+letter-spacing: 3px;
 
-  /* Christmas colors */
-  color: #ffdf70;
+/* White lettering */
+color: #ffffff;
 
-  background: linear-gradient(
-    135deg,
-    #064d29,
-    #08743b,
-    #064d29
-  );
+/* Christmas red background */
+background: linear-gradient(
+135deg,
+#a80000,
+#d41414,
+#a80000
+);
 
-  /* Gold border */
-  border: 5px double #e6bd45;
-  border-radius: 18px;
+/* Gold border */
+border: 5px double #e6bd45;
+border-radius: 18px;
 
-  padding: 35px 15px;
-  margin: 45px auto 35px;
-  max-width: 850px;
+padding: 55px 15px;
+margin: 45px auto 35px;
+max-width: 850px;
 
-  /* Holiday glow */
-  text-shadow:
-    2px 2px 3px #641010,
-    0 0 12px rgba(255, 215, 0, 0.6);
+/* White text glow */
+text-shadow:
+2px 2px 4px #640000,
+0 0 12px rgba(255, 255, 255, 0.3);
 
-  box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.3),
-    inset 0 0 25px rgba(255, 215, 0, 0.15);
+box-shadow:
+0 6px 18px rgba(0, 0, 0, 0.3),
+inset 0 0 25px rgba(255, 255, 255, 0.1);
 
-  /* Decorative snowflakes */
-  overflow: hidden;
+overflow: hidden;
 }
 
-/* Decorative stars and snowflakes */
+/* Snowflakes across the TOP */
 
 .holiday-heading::before {
-  content: "❄  ✦  ❄";
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-size: 25px;
-  letter-spacing: 5px;
+content: “❄  ✦  ❄  ✦  ❄  ✦  ❄”;
+position: absolute;
+top: 8px;
+left: 0;
+width: 100%;
+text-align: center;
+color: #ffffff;
+font-size: 20px;
+letter-spacing: 8px;
+pointer-events: none;
 }
+
+/* Snowflakes across the BOTTOM */
 
 .holiday-heading::after {
-  content: "❄  ✦  ❄";
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-size: 25px;
-  letter-spacing: 5px;
+content: “❄  ✦  ❄  ✦  ❄  ✦  ❄”;
+position: absolute;
+bottom: 8px;
+left: 0;
+width: 100%;
+text-align: center;
+color: #ffffff;
+font-size: 20px;
+letter-spacing: 8px;
+pointer-events: none;
 }
 
-/* Mobile Holiday Heading */
-
-@media (max-width: 768px) {
-
-  .holiday-heading {
-    font-size: 32px;
-    letter-spacing: 1px;
-    padding: 22px 10px;
-    margin: 30px auto;
-    border-width: 4px;
-  }
-
-}
 /* end of Holiday Specials Heading */
 
 section {
@@ -511,18 +500,18 @@ section h2,h3 {
   /* holiday */
    
   .holiday-heading {
-    font-size: 30px;
-    letter-spacing: 1px;
-    padding: 30px 5px;
-    margin: 30px auto;
-    border-width: 4px;
-  }
+font-size: 30px;
+letter-spacing: 1px;
+padding: 45px 5px;
+margin: 30px auto;
+border-width: 4px;
+}
 
-  .holiday-heading::before,
-  .holiday-heading::after {
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
+.holiday-heading::before,
+.holiday-heading::after {
+font-size: 13px;
+letter-spacing: 4px;
+}
 
   /* End of holiday*/
 
